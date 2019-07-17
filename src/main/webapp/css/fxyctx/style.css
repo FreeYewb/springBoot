@@ -1,0 +1,199 @@
+* {
+    margin: 0 auto;
+}
+@font-face{
+    src: url('..');
+}
+html {
+    height: 100%;
+    font-family: PingFangSC-Light,sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+  background: url("../../images/fxyctx/hb1.jpg") no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #5199FF;
+    background: transparent;
+}
+a:active{
+    color: #5199FF;
+    background: transparent;
+}
+a:visited{
+     background: transparent;
+}
+#text {
+    resize: none;
+    outline: none;
+    width: 250px;
+    height: 87px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 33px;
+    border: 1px solid rgba(151, 151, 151, 1);
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    bottom: 210px;
+    transform: translateX(-50%);
+}
+#hintAlert{
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background:rgba(0,0,0,0.35);
+    text-align: center;
+}
+#text img{
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    margin: 6px 10px;
+    float: left;
+}
+#text .content{
+    width: 140px;
+    display: inline-block;
+}
+.text_title{
+    font-size: 17px;
+    line-height: 43px;
+    border-bottom: 1px solid #979797;
+}
+.text_wechat{
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.text_wechat span{
+    display: block;
+    float: left;
+    line-height: 43px;
+}
+#btn {
+    width: 235px;
+    height: 70px;
+    background: linear-gradient(180deg, rgba(255, 195, 63, 1) 0%, rgba(253, 144, 29, 1) 100%);
+    box-shadow: 0px 3px 12px 0px rgba(63, 23, 0, 0.31);
+    border-radius: 16px;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(117, 0, 0, 1);
+    letter-spacing: 3px;
+}
+
+.con_text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 150px;
+    text-align: center;
+    display: block;
+    width: 320px;
+    height: 54px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.44);
+}
+
+#weChatNum {
+    color: #ff0000;
+    padding: 0;
+    margin-left: -1px;
+    font-weight: bold;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    float: left;
+    display: block;
+    line-height: 43px;
+    width: 80px;
+    background: transparent;
+    text-align: center;
+   font-size: 15px;
+   margin-right: -1px;
+}
+.copyHint{
+    width:240px;
+    height:104px;
+    background:rgba(255,255,255,1);
+    box-shadow:6px 6px 10px 0px rgba(0,0,0,0.36);
+    border-radius:10px;
+    border:1px solid rgba(151,151,151,1);
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+.copyHintCon{
+    width: 235px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px dashed #979797;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.copyHintCon i{
+    line-height: 1;
+    font-style: normal;
+    color: #ff0000;
+  margin: 0;
+}
+.weChatUrl{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 9;
+    width:260px;
+    padding-bottom: 15px;
+    background:rgba(255,255,255,1);
+    box-shadow:6px 6px 10px 0px rgba(0,0,0,0.36);
+    border-radius:10px;
+    /*border:1px solid rgba(151,151,151,1);*/
+    border: 5px solid #e59234;
+}
+.weChatUrlHint{
+    display: block;
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    line-height:1;
+    letter-spacing:1px;
+    margin-top: 18px;
+}
+
+.btn{
+    background-color: #881a1a;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+.btn>a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}

@@ -1,0 +1,662 @@
+
+
+.Content-title {
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px
+}
+
+.msg-content {
+    overflow: hidden;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.msg-content * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    word-wrap: break-word !important
+}
+
+.msg-content p {
+    clear: both;
+    min-height: 1em;
+}
+
+.msg-content em {
+    font-style: italic
+}
+
+.msg-content fieldset {
+    min-width: 0
+}
+
+.msg-content .list-paddingleft-2 {
+    padding-left: 30px
+}
+
+.msg-content blockquote {
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #dbdbdb
+}
+
+/* fix Firefox - max-width images not working within fieldset */
+fieldset {
+    border: 0 none;
+}
+
+fieldset img {
+    width: 100%;
+   max-width: moz-fit-content;
+    max-width: webkit-fit-content;
+}
+
+
+page {
+    position: relative;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.bdshare-slide-button-box {
+    position: fixed;
+}
+
+.bigtxt .msg-content, .bigtxt .msg-content * {
+    font-size: 19px !important;
+}
+
+.smalltxt .msg-content, .smalltxt .msg-content * {
+    font-size: 14px !important;
+}
+
+#wxmsg-normal-text, #wxmsg-small-text, #wxmsg-big-text {
+    cursor: pointer;
+}
+
+#wxmsg-normal-text {
+    color: #607fa6;
+}
+
+.bigtxt #wxmsg-big-text {
+    color: #607fa6;
+}
+
+.smalltxt #wxmsg-small-text {
+    color: #607fa6;
+}
+
+.bigtxt #wxmsg-normal-text, .smalltxt #wxmsg-normal-text {
+    color: #3e3e3e;
+}
+
+.qr_code_pc {
+    position: absolute;
+    right: -185px;
+    top: 20px;
+    text-align: center;
+    background: #FFF;
+    padding: 16px;
+    border: 1px solid #d9dadc;
+}
+
+.qr_code_pc_img {
+    width: 135px;
+}
+
+#main-content {
+    padding: 0px;
+}
+
+.btcode {
+    width: 100%;
+    background: #2680d8;
+    color: #FFF;
+    font-size: 0.9em;
+    line-height: 3em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    max-width: 640px
+}
+
+.btcode1 {
+    position: relative;
+    top: 10px
+}
+
+.quote p {
+    font-size: 14px
+}
+
+.quote p.info {
+    color: #666666
+}
+
+.quote .nickname {
+    color: #666666
+}
+
+.fl {
+    float: left;
+    font-size: 14px;
+}
+
+.fr {
+    float: right
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.reply_box {
+    color: #000000;
+    font-family: STHeiti Light;
+    margin-bottom: 10px
+}
+
+.quote {
+    position: relative;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+
+.detaillist {
+    margin: 20px 5px 24px;
+    text-align: left;
+}
+
+.detaillist .detail {
+    border-top: 1px solid #ddd;
+    min-height: 40px;
+    line-height: 20px
+}
+
+.detaillist .detail .title {
+    position: relative;
+    line-height: 24px;
+    padding: 6px 10px 6px 10px;
+    font-size: 14px;
+    color: #999999
+}
+
+.detaillist .detail .title span {
+    font-size: 12px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.detaillist .detail .title .arr {
+    background: #aaa;
+    border-radius: 3px;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 14px
+}
+
+.detaillist .detail .title .louzhu {
+    background: #3383e1
+}
+
+.detaillist .detail .content_box .content {
+    line-height: 24px;
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding: 0 10px;
+    word-break: break-all
+}
+
+.detaillist .detail .content_box .content .quote_reply {
+    background: #f2f2f2;
+    border: #e7e7e7 1px solid;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 10px;
+    padding: 10px
+}
+
+.detaillist .detail .content_box .content .quote_reply span {
+    color: #999;
+    margin-bottom: 5px;
+    display: inline-block
+}
+
+.detaillist .detail .content_box small {
+    margin: 8px 0px 8px 10px;
+    height: 20px;
+    line-height: 20px;
+    color: #999
+}
+
+.detaillist .detail .content_box span {
+    line-height: 22px
+}
+
+.detaillist .detail .content_box span a {
+    color: #3360a6;
+    display: inline-block;
+    line-height: 22px;
+    text-align: center
+}
+
+.detaillist .detail .content_box span a i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 4px
+}
+
+.detaillist .detail .content_box span a .huifu {
+    background-position: -40px -20px
+}
+
+.detaillist .detail .content_box .post_handle {
+    padding: 0 10px 15px
+}
+
+.detaillist .detail .content_box .post_handle .child_col {
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    width: 48%
+}
+
+.detaillist .detail .content_box .post_handle .reply, .detaillist .detail .content_box .post_handle .praise {
+    border-radius: 4px;
+    display: block;
+    font-size: 20px;
+    line-height: 43px;
+    height: 43px;
+    text-align: center
+}
+
+.detaillist .detail .content_box .post_handle .reply i, .detaillist .detail .content_box .post_handle .praise i {
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px
+}
+
+.detaillist .detail .content_box .post_handle .reply {
+    border: 1px solid #BFDFFF;
+    background-color: #F0F8FF;
+    color: #398CE0
+}
+
+.detaillist .detail .content_box .post_handle .reply .lz_huifu {
+    background-position: 0px -695px
+}
+
+.detaillist .detail .content_box .post_handle .praise {
+    border: 1px solid #FFBFBF;
+    background-color: #FFECEC;
+    color: #F1474A
+}
+
+.detaillist .detail .content_box .post_handle .praise .lz_zang {
+    background-position: -40px -695px
+}
+
+.btcode {
+    width: 100%;
+    background: #0553F8;
+    color: #FFF;
+    font-size: 1.2em;
+    line-height: 3em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    max-width: 640px;
+    font-weight: bold;
+}
+
+
+.article-container .article__header-container {
+    position: relative;
+}
+
+a.avatar-link {
+    display: block;
+    float: left;
+}
+
+.subtitle {
+    padding: 1px 0 0 8px;
+    font-size: 0;
+    float: left;
+}
+
+.name {
+    line-height: 16px;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.name a {
+    color: #406599;
+}
+
+.original {
+    border: 1px solid #999;
+    font-size: 10px;
+    border-radius: 4px;
+    line-height: 14px;
+    width: 30px;
+    color: #505050;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.avatar {
+    height: 32px;
+    width: 32px;
+    border: none;
+    border-radius: 32px;
+}
+
+.pgc-bar-top {
+    margin-top: 12px;
+}
+
+.tx {
+    padding-left: 5px;
+    width: 40px;
+    margin-bottom: -3px;
+}
+.foote {
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background-color: #fdc70a;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.foote p {
+    font-size: 16px;
+    color: #000;
+}
+
+.foote b {
+    font-size: 21px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.foote p {
+    text-indent: 0px;
+}
+
+.left {
+    float: left;
+    width: 15%;
+}
+
+.right {
+    float: left;
+    width: 70%;
+}
+
+.auto-style1 {
+    font-size: 19px;
+}
+
+.weixin {
+    font-weight: bold;
+    font-size: 19px;
+    color: red;
+    background: #f2f505;
+}
+
+.wwwimg img {
+    width: 100%;
+}
+
+.wwwimg2 img {
+    width: 50%;
+}
+
+.wwwimg3 img {
+    max-width: 80%;
+}
+
+
+.not_in_mm .qr_code_pc_outer {
+    display: none !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20px;
+    color: #717375;
+    text-align: center
+}
+
+.not_in_mm .qr_code_pc_inner {
+    position: relative;
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.not_in_mm .qr_code_pc {
+    position: absolute;
+    right: -140px;
+    top: 0;
+    width: 140px;
+    padding: 16px;
+    border: 1px solid #d9dadc;
+    background-color: #fff;
+    word-wrap: break-word;
+    word-break: break-all
+}
+
+.not_in_mm .qr_code_pc p {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.not_in_mm .qr_code_pc_img {
+    width: 102px;
+    height: 102px
+}
+
+@media screen and (min-width: 1025px) {
+    .not_in_mm .qr_code_pc_outer {
+        display: block !important
+    }
+}
+
+
+.Message{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+}
+.Message>p{
+    font-size:15px;
+    font-family:SourceHanSansCN-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    margin-left: 20px;
+}
+.Message>span{
+    font-size:12px;
+    font-family:SourceHanSansCN-Medium;
+    font-weight:500;
+   color: #999999;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+
+.headiamge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(238, 238, 238);
+    font-size: 0px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 16px 20px 0px 20px;
+    box-sizing: inherit;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    background-color: rgb(238, 238, 238);
+    font-size: 0px;
+}
+
+.main {
+    display: block;
+    width: 0%;
+    -moz-box-flex: 1;
+    flex: 1 1 0%;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.main::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 1px;
+
+    transform: scaleY(0.5);
+}
+
+.nick {
+    font-size:14px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height: 1;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.time {
+
+    line-height: 1;
+    margin-top: 10px;
+    font-size:11px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+}
+
+.content {
+    margin-top: 10px;
+    font-size: 17px !important;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+.content-p {
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    border-radius: 3px;
+    margin-left: -5px;
+    padding-left: 5px;
+    font-size:14px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+}
+
+.actions {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    line-height: 1;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(153, 153, 153);
+}
+
+.reply {
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    padding-left: 16px;
+    background-size: 12px 12px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    background-image: url("https://mat1.gtimg.com/www/mobi/2017/image/comment-icon-reply.png");
+}
+
+.like {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 16px;
+    background-size: 12px 12px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url("https://mat1.gtimg.com/www/mobi/2017/image/comment-like.svg");
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+    -webkit-animation-duration: 2s; /*动画所花费的时间*/
+    font-size:12px;
+    font-family:Helvetica;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+}
