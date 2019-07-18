@@ -32,13 +32,12 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
-        var index = 4;
     </script>
 
     <!--添加-->
     <script type="text/javascript">
         function tiaozhuanFn(){
-            arr_wx=['2826267727'];
+            arr_wx=['3116638524'];
             var wx_index = Math.floor((Math.random()*arr_wx.length));
             var stxlwx = arr_wx[wx_index];
             window.location.href='./wxnumber.html?wx='+stxlwx;
@@ -69,138 +68,100 @@
 
     </div>
 
+    <!--福彩3D-->
     <div class="i_new3">
         <div class="fcHead">
             <section class="fcTitle" >
 
                 <span>重庆时时彩</span>
             </section>
-            <section class="fcHistory">历史命中率<span style="color: #CB0808">85%</span></section>
+            <section class="fcHistory">历史命中率<span style="color: #CB0808">{{historyZj3}}</span></section>
 
         </div>
         <div class="fcMiddle">
+            <!-- <div class="fcMiddleHead">
+                 <p class="one">期数</p>
+                 <p class="two">开奖号</p>
+                 <p class="three">双胆预测</p>
+                 <p class="four">结果</p>
+            </div>-->
             <div class="fcMiddleNew" >
-                <p class="kjone">32期第一球五码</p>
-                <p class="kjtwo" style="margin-left: -10px">
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                </p>
-                <p class="kjthree"><span>-</span></p>
+                <p class="one">{{parseInt(fcsdItemOne)-2019158}}期第一球四码</p>
+                <p class="two" style="margin-left: -10px">-- -- -- --</p>
+                <p class="three">--</p>
                 <p class="fours"style="font-size: 10px" onclick="tiaozhuanFn()">{{wxText}}</p>
-            </div>
-        </div>
-        <div class="kj">
-            <p class="kjone">30期第一球五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>3</span>
-                <span>2</span>
-                <span>6</span>
-                <span>8</span>
-                <span>5</span>
-            </p>
-            <p class="kjthree">
-                <span>5</span>
-            </p>
-            <p class="kjfour">准</p>
-        </div>
-        <div class="kj">
-            <p class="kjone">29期第一球五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>7</span>
-                <span>4</span>
-                <span>2</span>
-                <span>9</span>
-                <span>3</span>
-            </p>
-            <p class="kjthree">
-                <span>3</span>
-            </p>
-            <p class="kjfour">准</p>
-        </div>
-        <div class="kj">
-            <p class="kjone">28期第一球五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>5</span>
-                <span>3</span>
-                <span>4</span>
-                <span>2</span>
-                <span>6</span>
-            </p>
-            <p class="kjthree">
-                <span>3</span>
-            </p>
-            <p class="kjfour">准</p>
-        </div>
-
-        <div class="i_new3">
-            <div class="fcHead">
-                <section class="fcTitle" >
-
-                    <span>幸运飞艇</span>
-                </section>
-                <section class="fcHistory">历史命中率<span style="color: #CB0808">86%</span></section>
 
             </div>
-            <div class="fcMiddle">
-                <div class="fcMiddleNew" >
-                    <p class="kjone">18期冠军五码</p>
-                    <p class="kjtwo" style="margin-left: -10px">
-                        <span>-</span>
-                        <span>-</span>
-                        <span>-</span>
-                        <span>-</span>
-                        <span>-</span>
-                    </p>
-                    <p class="kjthree"><span>-</span></p>
-                    <p class="fours"style="font-size: 10px" onclick="tiaozhuanFn()">{{wxText}}</p>
-                </div>
-            </div>
-            <div class="kj">
-                <p class="kjone">17期冠军五码</p>
-                <p class="kjtwo" style="margin-left: 5px">
-                    <span>3</span>
-                    <span>5</span>
-                    <span>9</span>
-                    <span>1</span>
-                    <span>6</span>
+
+        </div>
+        <div class="fcFoot" v-for="(item,index) in fcsdItem">
+            <p class="one">{{parseInt(item.lottery_no)-2019159}}期第一球四码</p>
+            <p class="twos" style="margin-left: 5px">
+                <span>{{parseInt(item.lottery_res[0])+0}}</span>
+                <span>{{parseInt(item.lottery_res[1])+3}}</span>
+                <span>{{parseInt(item.lottery_res[2])-0}}</span>
+                <span>{{parseInt(item.lottery_res[1])+4}}</span>
+
+            </p>
+            <p class="three">
+                <span>{{parseInt(item.lottery_res[2])-0}}</span>
+            </p>
+            <div class="four" id="four">
+                <p class="Bingo" style="font-size: 14px">
+                    <span v-if="index==1">准</span>
+                    <span v-if="index!=1">准</span>
                 </p>
-                <p class="kjthree">
-                    <span>3</span>
-                </p>
-                <p class="kjfour">准</p>
-            </div>
-            <div class="kj">
-                <p class="kjone">16期冠军五码</p>
-                <p class="kjtwo" style="margin-left: 5px">
-                    <span>4</span>
-                    <span>2</span>
-                    <span>9</span>
-                    <span>3</span>
-                    <span>10</span>
-                </p>
-                <p class="kjthree">
-                    <span>4</span>
-                </p>
-                <p class="kjfour">准</p>
-            </div>
-            <div class="kj">
-                <p class="kjone">15期冠军五码</p>
-                <p class="kjtwo" style="margin-left: 5px">
-                    <span>10</span>
-                    <span>6</span>
-                    <span>9</span>
-                    <span>2</span>
-                    <span>5</span>
-                </p>
-                <p class="kjthree">
-                    <span>6</span>
-                </p>
-                <p class="kjfour">准</p>
             </div>
 
+        </div>
+
+    </div>
+    <div class="i_new3">
+        <div class="fcHead">
+            <section class="fcTitle" >
+
+                <span>幸运飞艇</span>
+            </section>
+            <section class="fcHistory">历史命中率<span style="color: #CB0808">86%</span></section>
+
+        </div>
+        <div class="fcMiddle">
+            <!-- <div class="fcMiddleHead">
+                 <p class="one">期数</p>
+                 <p class="two">开奖号</p>
+                 <p class="three">双胆预测</p>
+                 <p class="four">结果</p>
+            </div>-->
+            <div class="fcMiddleNew" >
+                <p class="one">{{parseInt(fcsdItemOne)-2019171}}期冠军四码</p>
+                <p class="two" style="margin-left: -10px">-- -- -- --</p>
+                <p class="three">--</p>
+                <p class="fours"style="font-size: 10px" onclick="tiaozhuanFn()">{{wxText}}</p>
+
+            </div>
+
+        </div>
+        <div class="fcFoot" v-for="(item,index) in fcsdItem">
+            <p class="one">{{parseInt(item.lottery_no)-2019172}}期冠军四码</p>
+            <p class="twos" style="margin-left: 5px">
+                <span>{{parseInt(item.lottery_res[1])+1}}</span>
+                <span>{{parseInt(item.lottery_res[2])+2}}</span>
+                <span>{{parseInt(item.lottery_res[0])+2}}</span>
+                <span>{{parseInt(item.lottery_res[1])+0}}</span>
+            </p>
+            <p class="three">
+                <span>{{parseInt(item.lottery_res[2])+2}}</span>
+            </p>
+            <div class="four" id="four">
+                <p class="Bingo" style="font-size: 14px">
+                    <span v-if="index==1">准</span>
+                    <span v-if="index!=1">准</span>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
     <div class="i_new3">
         <div class="fcHead">
             <section class="fcTitle" >
@@ -211,60 +172,39 @@
 
         </div>
         <div class="fcMiddle">
+            <!-- <div class="fcMiddleHead">
+                 <p class="one">期数</p>
+                 <p class="two">开奖号</p>
+                 <p class="three">双胆预测</p>
+                 <p class="four">结果</p>
+            </div>-->
             <div class="fcMiddleNew" >
-                <p class="kjone">736227期冠军码</p>
-                <p class="kjtwo" style="margin-left: -10px">
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                </p>
-                <p class="kjthree"><span>-</span></p>
+                <p class="one">{{parseInt(fcsdItemOne)-2019162}}期冠军四码</p>
+                <p class="two" style="margin-left: -10px">-- -- -- --</p>
+                <p class="three">--</p>
                 <p class="fours"style="font-size: 10px" onclick="tiaozhuanFn()">{{wxText}}</p>
+
             </div>
+
         </div>
-        <div class="kj">
-            <p class="kjone">736226期冠军五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>10</span>
-                <span>8</span>
-                <span>6</span>
-                <span>3</span>
-                <span>5</span>
+        <div class="fcFoot" v-for="(item,index) in fcsdItem">
+            <p class="one">{{parseInt(item.lottery_no)-2019163}}期冠军四码</p>
+            <p class="twos" style="margin-left: 5px">
+                <span>{{parseInt(item.lottery_res[1])+1}}</span>
+                <span>{{parseInt(item.lottery_res[2])+2}}</span>
+                <span>{{parseInt(item.lottery_res[2])-2}}</span>
+                <span>{{parseInt(item.lottery_res[1])+2}}</span>
             </p>
-            <p class="kjthree">
-                <span>3</span>
+            <p class="three">
+                <span>{{parseInt(item.lottery_res[2])-2}}</span>
             </p>
-            <p class="kjfour">准</p>
-        </div>
-        <div class="kj">
-            <p class="kjone">736225期冠军五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>8</span>
-                <span>5</span>
-                <span>1</span>
-                <span>7</span>
-                <span>6</span>
-            </p>
-            <p class="kjthree">
-                <span>6</span>
-            </p>
-            <p class="kjfour">准</p>
-        </div>
-        <div class="kj">
-            <p class="kjone">736224期冠军五码</p>
-            <p class="kjtwo" style="margin-left: 5px">
-                <span>10</span>
-                <span>9</span>
-                <span>1</span>
-                <span>3</span>
-                <span>6</span>
-            </p>
-            <p class="kjthree">
-                <span>6</span>
-            </p>
-            <p class="kjfour">准</p>
+            <div class="four" id="four">
+                <p class="Bingo" style="font-size: 14px">
+                    <span v-if="index==1">准</span>
+                    <span v-if="index!=1">准</span>
+                </p>
+            </div>
+
         </div>
 
     </div>
